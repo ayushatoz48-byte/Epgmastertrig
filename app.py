@@ -27,7 +27,7 @@ def update_github_file():
         "Accept": "application/vnd.github.v3+json"
     }
 
-    # 1. Get the file's current SHA (required by GitHub to update an existing file)
+    # 1. Get the files current SHA (required by GitHub to update an existing file)
     sha = None
     get_resp = requests.get(url, headers=headers)
     if get_resp.status_code == 200:
